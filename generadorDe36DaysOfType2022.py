@@ -13,6 +13,8 @@ from collections import namedtuple
 # Rutas relevantes
 datosCarpeta = os.path.join( os.path.split(__file__)[0], 'datos' )
 datos = os.path.join(datosCarpeta, 'datos36DaysOfType2022.csv')
+repo = os.path.split(datosCarpeta)[0]
+salida = os.path.join(repo, 'salida')
 # Named tuple para generar la estructura de cada archivo de salida
 FormatoDeSalida = namedtuple('FormatoDeSalida',['x','y'])
 # Diccionario con los archivos de salida
