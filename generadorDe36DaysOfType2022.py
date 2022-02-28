@@ -68,10 +68,10 @@ def disenador(dia,info,formatos,salida):
         margen = max([ancho, alto])*.1
         newPage(ancho, alto)
         # Fondo definido por el valor hex del día
-        with savedState(): fill(1), rect(0,0,ancho,alto)
         diaint = sum([int(n) for n in str(int(f'0x{dia*16}',16))])
         diaColor = [int(n)/9 for n in str(diaint)]
         y, divs = 0, 50
+        with savedState(): fill(*tuple(diaColor)), rect(0,0,ancho,alto)
         while y <= alto:
             grad = [lerp(c,1-c,y/alto) for c in diaColor]
             with savedState():
