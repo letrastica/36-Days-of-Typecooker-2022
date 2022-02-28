@@ -95,7 +95,7 @@ def disenador(dia,info,formatos,salida):
         receta.append('\nWeight: ', fill=(0)), receta.append(f'{info.peso}', fill=diaColor)
         receta.append('\nContrast: ', fill=(0)), receta.append(f'{info.contraste}', fill=diaColor)
         receta.append('\nWidth: ', fill=(0)), receta.append(f'{info.ancho}', fill=diaColor)
-        receta.append('\nEndings: ', fill=(0)), receta.append(f'{info.terminacion}', fill=diaColor)
+        receta.append('\nSerif: ', fill=(0)), receta.append(f'{info.terminacion}', fill=diaColor)
         receta.append('\nOptional: ', fill=(0)), receta.append(f'{info.opcional}', fill=diaColor)
         receta.append('\nEffects: ', fill=(0)), receta.append(f'{info.efectos}', fill=diaColor)
         anchoCaja, altoCaja = ancho*.7, alto*.83
